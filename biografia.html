@@ -1,0 +1,395 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografía de José José | El Príncipe de la Canción</title>
+    <style>
+        body {
+            background-image: url(' fondo.jpeg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+        }
+    </style>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.7;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #1a237e, #b71c1c);
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+        
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Jos%C3%A9_Jos%C3%A9_2012.jpg/640px-Jos%C3%A9_Jos%C3%A9_2012.jpg') center/cover;
+            opacity: 0.15;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 3.5rem;
+            position: relative;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        }
+        
+        .subtitle {
+            font-style: italic;
+            font-size: 1.5rem;
+            margin-top: 15px;
+            position: relative;
+            font-weight: 300;
+        }
+        
+        /* Sección principal */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        /* Panel de información */
+        .info-panel {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            padding: 25px;
+            position: sticky;
+            top: 20px;
+        }
+        
+        .profile-img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border: 5px solid white;
+        }
+        
+        .info-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .info-item:last-child {
+            border-bottom: none;
+        }
+        
+        .info-label {
+            font-weight: 600;
+            color: #1a237e;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        /* Contenido de biografía */
+        .bio-content {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            padding: 30px;
+        }
+        
+        h2 {
+            color: #1a237e;
+            margin-top: 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #b71c1c;
+            font-size: 2rem;
+        }
+        
+        h3 {
+            color: #b71c1c;
+            margin-top: 30px;
+            font-size: 1.5rem;
+        }
+        
+        /* Cajas destacadas */
+        .highlight-box {
+            background: #fff8e1;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        .quote {
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #555;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .quote::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 2rem;
+            color: #b71c1c;
+            line-height: 1;
+        }
+        
+        /* Tablas */
+        .timeline {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+        
+        .timeline th {
+            background: #1a237e;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        .timeline td {
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .timeline tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        
+        .timeline tr:hover {
+            background: #f1f1f1;
+        }
+        
+        .year {
+            font-weight: bold;
+            color: #b71c1c;
+            width: 80px;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #1a237e;
+            color: white;
+            margin-top: 50px;
+            border-radius: 8px 8px 0 0;
+        }
+        
+        .footer-quote {
+            font-style: italic;
+            margin-top: 15px;
+            opacity: 0.9;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .info-panel {
+                position: static;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>José José</h1>
+            <p class="subtitle">Biografía del Príncipe de la Canción</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="main-content">
+            <!-- Panel de información -->
+            <aside class="info-panel">
+                <img src="jose1.jpeg" alt="José José" class="profile-img">
+                
+                <div class="info-item">
+                    <span class="info-label">Nombre completo</span>
+                    José Rómulo Sosa Ortiz
+                </div>
+                
+                <div class="info-item">
+                    <span class="info-label">Nacimiento</span>
+                    17 de febrero de 1948<br>
+                    Ciudad de México, México
+                </div>
+                
+                <div class="info-item">
+                    <span class="info-label">Fallecimiento</span>
+                    28 de septiembre de 2019 (71 años)<br>
+                    Miami, Florida, Estados Unidos
+                </div>
+                
+                <div class="info-item">
+                    <span class="info-label">Cónyuge</span>
+                    Anel Noreña (1969-1975)<br>
+                    Natalia Herrera Calles (1976-1991)<br>
+                    Sara Salazar (1995-2019)
+                </div>
+                
+                <div class="info-item">
+                    <span class="info-label">Hijos</span>
+                    José Joel, Marysol y Sarita Sosa
+                </div>
+                
+                <div class="info-item">
+                    <span class="info-label">Ocupación</span>
+                    Cantante, actor, productor musical
+                </div>
+                
+                <div class="info-item">
+                    <span class="info-label">Géneros</span>
+                    Balada romántica, bolero, pop latino
+                </div>
+                
+                <div class="info-item">
+                    <span class="info-label">Período activo</span>
+                    1965-2019
+                </div>
+            </aside>
+            
+            <!-- Contenido principal -->
+            <main class="bio-content">
+                <h2>Biografía</h2>
+                
+                <p>José Rómulo Sosa Ortiz, conocido artísticamente como <strong>José José</strong>, fue uno de los cantantes más icónicos de la música en español. Con una carrera que abarcó más de cinco décadas, se ganó el título de <em>"El Príncipe de la Canción"</em> y se convirtió en un símbolo de la música romántica en todo el mundo hispanohablante.</p>
+                
+                <div class="highlight-box">
+                    <p class="quote">"Cuando era niño soñaba con ser cantante, pero nunca imaginé que llegaría tan lejos. La vida me dio más de lo que merecía y estoy agradecido con mi público que me ha permitido vivir de mi pasión."</p>
+                </div>
+                
+                <h3>Infancia y primeros años</h3>
+                <p>Nació el 17 de febrero de 1948 en la Ciudad de México. Hijo del tenor <strong>José Sosa Esquivel</strong> y la concertista de piano <strong>Margarita Ortiz Pensado</strong>, desde pequeño estuvo inmerso en el mundo de la música. Su padre lo llamaba cariñosamente "Pepe", nombre que luego se transformaría en el artístico "José José".</p>
+                
+                <p>Su infancia estuvo marcada por las dificultades económicas y el alcoholismo de su padre, quien falleció cuando José tenía apenas 15 años. Este evento lo llevó a abandonar sus estudios para ayudar económicamente a su familia, trabajando en diversos oficios mientras cultivaba su pasión por la música.</p>
+                
+                <h3>Inicios artísticos</h3>
+                <p>En 1965, comenzó su carrera artística cantando en bares y cafés de la zona rosa de la Ciudad de México con el trío "Los Peg". Más tarde formó parte del grupo "Los Hormigas" y posteriormente inició su carrera como solista.</p>
+                
+                <p>Su gran oportunidad llegó en 1970 cuando participó en el <em>Festival de la Canción Latina</em> (actualmente Festival Internacional de la Canción de Viña del Mar) con la canción <strong>"El Triste"</strong>, que lo catapultó a la fama internacional. A pesar de no ganar el festival, su interpretación se considera histórica y marcó el inicio de su ascenso a la cima de la música en español.</p>
+                
+                <table class="timeline">
+                    <thead>
+                        <tr>
+                            <th>Año</th>
+                            <th>Evento importante</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="year">1970</td>
+                            <td>Lanzamiento de su primer álbum como solista "Cuidado"</td>
+                        </tr>
+                        <tr>
+                            <td class="year">1975</td>
+                            <td>Graba "El Príncipe", álbum que le daría su apodo característico</td>
+                        </tr>
+                        <tr>
+                            <td class="year">1983</td>
+                            <td>Lanza "Secretos", su álbum más vendido con más de 7 millones de copias</td>
+                        </tr>
+                        <tr>
+                            <td class="year">1985</td>
+                            <td>Protagoniza la telenovela "El Camino Secreto"</td>
+                        </tr>
+                        <tr>
+                            <td class="year">1998</td>
+                            <td>Publica su autobiografía "Esta es mi vida"</td>
+                        </tr>
+                        <tr>
+                            <td class="year">2004</td>
+                            <td>Recibe el Premio a la Excelencia en los Grammy Latinos</td>
+                        </tr>
+                        <tr>
+                            <td class="year">2017</td>
+                            <td>Celebra 50 años de carrera con un concierto homenaje</td>
+                        </tr>
+                        <tr>
+                            <td class="year">2019</td>
+                            <td>Fallece el 28 de septiembre en Miami a los 71 años</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3>Legado artístico</h3>
+                <p>José José grabó más de 30 álbumes a lo largo de su carrera, vendiendo más de 100 millones de discos en todo el mundo. Algunas de sus canciones más emblemáticas incluyen:</p>
+                
+                <ul>
+                    <li>"El Triste" (1970)</li>
+                    <li>"La Nave del Olvido" (1970)</li>
+                    <li>"Almohada" (1976)</li>
+                    <li>"Gavilán o Paloma" (1985)</li>
+                    <li>"Lo Pasado, Pasado" (1978)</li>
+                    <li>"40 y 20" (1983)</li>
+                    <li>"¿Y Quién Puede Ser?" (1986)</li>
+                </ul>
+                
+                <div class="highlight-box">
+                    <p>Su estilo vocal único, caracterizado por su registro de tenor y su capacidad para transmitir emociones profundas, influenció a generaciones de cantantes latinos. Artistas como Luis Miguel, Alejandro Fernández y Cristian Castro han reconocido su deuda artística con José José.</p>
+                </div>
+                
+                <h3>Vida personal y últimos años</h3>
+                <p>José José se casó tres veces y tuvo tres hijos. Su vida personal estuvo marcada por altibajos, incluyendo problemas con el alcoholismo que afectaron su salud y carrera. En sus últimos años, enfrentó problemas financieros y de salud, incluyendo un cáncer de páncreas que finalmente causó su fallecimiento.</p>
+                
+                <p>Pese a estos desafíos, mantuvo siempre una conexión profunda con su público. Su funeral en Miami y el homenaje en el Palacio de Bellas Artes en la Ciudad de México atestiguaron el amor que millones de fanáticos le profesaban.</p>
+                
+                <p>El legado de José José trasciende la música. Se convirtió en un ícono cultural que representó como pocos la capacidad del arte para conmover y unir a las personas a través de las fronteras. Como él mismo decía: <em>"Cantar no es mi trabajo, es mi vida"</em>.</p>
+            </main>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>"Vivir así es morir de amor" - José José (1938-2019)</p>
+            <p class="footer-quote"></p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discografía Completa de José José</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #1a237e, #b71c1c);
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+            margin-bottom: 40px;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+        }
+        
+        .subtitle {
+            font-style: italic;
+            font-size: 1.3rem;
+            margin-top: 15px;
+            opacity: 0.9;
+        }
+        
+        /* Grid de discos */
+        .discography {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .album {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .album:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .album-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-bottom: 3px solid #b71c1c;
+        }
+        
+        .album-info {
+            padding: 20px;
+        }
+        
+        .album-title {
+            font-size: 1.4rem;
+            margin: 0 0 10px 0;
+            color: #1a237e;
+        }
+        
+        .album-year {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        .spotify-btn {
+            display: inline-block;
+            background-color: #1DB954;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        
+        .spotify-btn:hover {
+            background-color: #1ed760;
+        }
+        
+        .spotify-icon {
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            background: #1a237e;
+            color: white;
+            border-radius: 20px 20px 0 0;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .discography {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Discografía de José José</h1>
+            <p class="subtitle">El Príncipe de la Canción</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="discography">
+            <!-- Álbum 1 -->
+            <div class="album">
+                <img src="triste.jpeg" alt="Secretos" class="album-img">
+                <div class="album-info">
+                    <h3 class="album-title">EL TRISTE</h3>
+                    <span class="album-year">1970</span>
+                    <p>José José</p>
+                    <a href="https://open.spotify.com/track/0aTMBEfPCCkKkneU6gLmDD?si=oWbF2YVJRpmlVAg7Rv52g" class="spotify-btn" target="_blank">
+                        <span class="spotify-icon">ᯤ </span> Spotify
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Álbum 2 -->
+            <div class="album">
+                <img src="pasado.jpeg" alt="Gavilán o Paloma" class="album-img">
+                <div class="album-info">
+                    <h3 class="album-title">Lo pasado, pasado</h3>
+                    <span class="album-year">1978</span>
+                    <p>José José</p>
+                    <a href="https://open.spotify.com/track/0N0MCLSnB3318RzJLVLtXt?si=fkvvN3ZlTnOMYafIdEYnSw" class="spotify-btn" target="_blank">
+                        <span class="spotify-icon">ᯤ </span> Spotify
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Álbum 3 -->
+            <div class="album">
+                <img src="amor.jpeg" alt="El Príncipe" class="album-img">
+                <div class="album-info">
+                    <h3 class="album-title">Amor, Amor</h3>
+                    <span class="album-year">1980</span>
+                    <p>José José</p>
+                    <a href="https://open.spotify.com/track/3mPsvF84MBbrwj0YEhODQq?si=yFyIPwc9SfS18oCiV3HuVA" class="spotify-btn" target="_blank">
+                        <span class="spotify-icon">ᯤ </span> Spotify
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Álbum 4 -->
+            <div class="album">
+                <img src="gracias.jpeg" alt="Volcán" class="album-img">
+                <div class="album-info">
+                    <h3 class="album-title">Gracias</h3>
+                    <span class="album-year">1981</span>
+                    <p>José José</p>
+                    <a href="https://open.spotify.com/track/48VENy4OcYcYgHW7GzWWDM?si=S_Cly9WWTw2Aq4EEqNvJXQ" class="spotify-btn" target="_blank">
+                        <span class="spotify-icon">ᯤ </span> Spotify
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Álbum 5 -->
+            <div class="album">
+                <img src="vida.jpeg" alt="Lo Pasado, Pasado" class="album-img">
+                <div class="album-info">
+                    <h3 class="album-title">Mi vida</h3>
+                    <span class="album-year">1982</span>
+                    <p>José José</p>
+                    <a href="https://open.spotify.com/track/4BgYK2dtql6JyON9Mu64u9?si=JPTbytmxR9yHnQ0QsNC6yA" class="spotify-btn" target="_blank">
+                        <span class="spotify-icon">ᯤ </span> Spotify
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Álbum 6 -->
+            <div class="album">
+                <img src="secretos.jpeg" alt="Siempre Contigo" class="album-img">
+                <div class="album-info">
+                    <h3 class="album-title">Secretos</h3>
+                    <span class="album-year">1983</span>
+                    <p>José José</p>
+                    <a href="https://open.spotify.com/album/1Bzdy4dRu2czCWd4bpCzUh?si=VgSbQ1X3QAyQHZaB6ONd2A" class="spotify-btn" target="_blank">
+                        <span class="spotify-icon">ᯤ </span> Spotify
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Álbum 7 -->
+            <div class="album">
+                <img src="40 y 20.jpeg" alt="Promesas" class="album-img">
+                <div class="album-info">
+                    <h3 class="album-title">40 y 20</h3>
+                    <span class="album-year">1992</span>
+                    <p>José José</p>
+                    <a href="https://open.spotify.com/album/5ucTTZBnOzd3CDwQ8DwCil?si=wWNcCwlaQ-29DcSP3RbCZw" class="spotify-btn" target="_blank">
+                        <span class="spotify-icon">ᯤ </span> Spotify
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Álbum 8 -->
+            <div class="album">
+                <img src="mujeriego.jpeg" alt="Reflexiones" class="album-img">
+                <div class="album-info">
+                    <h3 class="album-title">Mujeriego</h3>
+                    <span class="album-year">1995</span>
+                    <p>José José</p>
+                    <a href="https://open.spotify.com/track/2djCa914hXJtSJPxN3ziCX?si=rMj7UFvcTJmJxJr_82baeQ" class="spotify-btn" target="_blank">
+                        <span class="spotify-icon">ᯤ </span> Spotify
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>"Vivir así es morir de amor" - El Príncipe de la Canción</p>
+        </div>
+    </footer>
+</body>
+</html>
